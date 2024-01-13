@@ -1,0 +1,109 @@
+:root {
+    /*=============== COLORS ==================*/
+    /* HEX color mode */
+    --primary-color: #254A81;
+    --secondary-color: #4CFC5B;
+    --tartiary-color: #87CD6A;
+}
+
+@font-face {
+    font-family: 'FaithHopeBF6549e8edd6a09';
+    src: url('../fonts/FaithHopeBF6549e8edd6a09.eot');
+    src: url('../fonts/FaithHopeBF6549e8edd6a09.eot') format('embedded-opentype'),
+        url('../fonts/FaithHopeBF6549e8edd6a09.woff2') format('woff2'),
+        url('../fonts/FaithHopeBF6549e8edd6a09.woff') format('woff'),
+        url('../fonts/FaithHopeBF6549e8edd6a09.ttf') format('truetype'),
+        url('../fonts/FaithHopeBF6549e8edd6a09.svg#FaithHopeBF6549e8edd6a09') format('svg');
+}
+
+body {
+    font-family: 'FaithHopeBF6549e8edd6a09';
+    background: var(--primary-color);
+}
+
+.button {
+    background: linear-gradient(110deg, var(--secondary-color) 0%, var(--tartiary-color) 100%);
+}
+
+/* header */
+.nav__social__btn {
+    background: var(--tartiary-color);
+}
+
+@media screen and (max-width: 968px) {
+    .nav__manu {
+        width: 240px;
+        height: 100%;
+        background: var(--tartiary-color);
+        padding: 2.5rem;
+        position: absolute;
+        top: 0;
+        left: -280px;
+        transition: .3s;
+    }
+
+    .nav__manu.show-menu {
+        left: 0;
+    }
+
+    .nav__close {
+        position: absolute;
+        top: .75rem;
+        right: .75rem;
+        font-size: 1.6rem;
+        color: var(--primary-color);
+    }
+
+    .nav__button {
+        background: var(--primary-color);
+    }
+
+    .nav__toggle {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav__logo {
+        width: 7rem !important;
+    }
+
+    .nav__social__btn {
+        font-size: 1.4rem;
+    }
+}
+
+/* banner */
+@media screen and (min-width: 768px) {
+    .banner__img {
+        width: 340px !important;
+    }
+
+    .banner__data, 
+    .banner__buttons {
+        padding: 0 4rem;
+    }
+
+    .banner__button {
+        width: 10rem !important;
+    }
+}
+
+.banner__anime__content img {
+    animation: upShaking 1.25s linear infinite;
+}
+
+@keyframes upShaking {
+    0% {
+        transform: translateY(0);
+    }
+    42% {
+        transform: translateY(0.5rem);
+    }
+    58% {
+        transform: translateY(0.5rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

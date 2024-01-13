@@ -10,3 +10,11 @@ navToggle.addEventListener('click', () => {
 navClose.addEventListener('click', () => {
     navMenu.classList.remove('show-menu')
 })
+
+// anchorScroll
+var anchorScroll = $(document).AnchorScroll({
+    speed: 1000
+});
+
+// wowJs
+new WOW().init();

@@ -13,6 +13,9 @@
     <!--======== tailwind css ========-->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!--======== animate css ========-->
+    <link rel="stylesheet" href="css/animate.css">
+
     <!--======== custom css ========-->
     <link rel="stylesheet" href="css/style.css">
     <title>Poge Panda</title>
@@ -31,12 +34,10 @@
         <div class="nav__manu flex flex-col lg:flex-row justify-start items-start lg:justify-between lg:items-center gap-6 lg:gap-8 text-upper" id="nav-menu">
             <i class="bi bi-x-circle-fill nav__close lg:hidden" id="nav-close"></i>
 
-            <a href="" class="nav__item text-white">Home</a>
-            <a href="" class="nav__item text-white">Features</a>
-            <a href="" class="nav__item text-white">How to buy</a>
-            <a href="" class="nav__item text-white">Tokenomics</a>
-            <a href="" class="nav__item text-white">Roadmap</a>
-            <a href="" class="nav__item text-white">Community</a>
+            <a href="#home" class="nav__item text-white">Home</a>
+            <a href="#feature" class="nav__item text-white">Features</a>
+            <a href="#about" class="nav__item text-white">About us</a>
+            <a href="#community" class="nav__item text-white">Community</a>
             <a href="" class="nav__button button text-white px-3 py-2 lg:px-5 lg:py-3 rounded-md text-xs lg:text-sm">White Paper</a>
         </div>
 
@@ -60,39 +61,42 @@
 <!--======== main ========-->
 <main>
     <!--======== banner ========-->
-    <section class="banner__section text-white pt-12 pb-4 lg:pt-16 lg:pb-8">
+    <section class="banner__section text-white pt-12 pb-4 lg:pt-16 lg:pb-8" id="home">
         <div class="xl:container flex flex-col justify-center items-center mx-4 xl:mx-auto">
-            <div class="banner__img w-full mb-2">
+            <div class="banner__img w-full mb-2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="images/banner.png" alt="" class="w-full">
             </div>
 
-            <div class="banner__data mb-6 md:mb-10">
+            <div class="banner__data mb-6 md:mb-10 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                 <p class="text-center text-sm lg:text-base md:px-8">
                     Poge Panda is built on a strong foundation of community support and transparency. The team behind the coin is dedicated to keeping investors informed and involved every step of the way. 
                 </p>
             </div>
 
             <div class="banner__buttons w-full grid grid-cols-3 lg:flex lg:justify-center items-center gap-6 lg:gap-14 text-upper text-sm md:text-base mb-2">
-                <a href="https://birdeye.so/token/CZs6tdsYiX8KFj14Cv5wWjdg1aC1CuSMsxPuffkvCXz8?chain=solana" class="banner__button button px-4 py-3 rounded md:px-6 md:py-4 md:rounded-lg w-full text-center">Chart</a>
-                <a href="https://solscan.io/account/CZs6tdsYiX8KFj14Cv5wWjdg1aC1CuSMsxPuffkvCXz8" class="banner__button button px-4 py-3 rounded md:px-6 md:py-4 md:rounded-lg w-full text-center">Solscan</a>
-                <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=CZs6tdsYiX8KFj14Cv5wWjdg1aC1CuSMsxPuffkvCXz8&fixed=in" class="banner__button button px-4 py-3 rounded md:px-6 md:py-4 md:rounded-lg w-full text-center">Raydium</a>
+                <a href="https://birdeye.so/token/CZs6tdsYiX8KFj14Cv5wWjdg1aC1CuSMsxPuffkvCXz8?chain=solana" class="banner__button button px-4 py-3 rounded md:px-6 md:py-4 md:rounded-lg w-full text-center wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s">Chart</a>
+
+                <a href="https://solscan.io/account/CZs6tdsYiX8KFj14Cv5wWjdg1aC1CuSMsxPuffkvCXz8" class="banner__button button px-4 py-3 rounded md:px-6 md:py-4 md:rounded-lg w-full text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">Solscan</a>
+
+                <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=CZs6tdsYiX8KFj14Cv5wWjdg1aC1CuSMsxPuffkvCXz8&fixed=in" class="banner__button button px-4 py-3 rounded md:px-6 md:py-4 md:rounded-lg w-full text-center wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s">Raydium</a>
             </div>
 
-            <div class="banner__anime__content">
+            <div class="banner__anime__content wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="images/logo.png" alt="" class="w-full">
             </div>
         </div>
     </section>
 
     <!--======== main feature ========-->
-    <section class="main__feature__section text-white pt-12 pb-4 lg:pt-16 lg:pb-8 text-upper">
+    <section class="main__feature__section text-white pt-12 pb-4 lg:py-20 text-upper" id="feature">
         <div class="xl:container grid lg:grid-cols-2 lg:items-center mx-4 xl:mx-auto gap-6">
             <!--=== main feature data ===-->
             <div class="main__feature__data">
-                <h5 class="text-xl mb-8">Main Feature <span>Points</span></h5>
-                <h2 class="text-4xl mb-4">Community Driven & SOL based Ecosystem memecoin</h2>
+                <h5 class="text-xl mb-8 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">Main Feature <span>Points</span></h5>
 
-                <p class="text-sm md:text-base">
+                <h2 class="text-4xl mb-4 wow rotateIn" data-wow-duration="2s" data-wow-delay="1s">Community Driven & SOL based Ecosystem memecoin</h2>
+
+                <p class="text-sm md:text-base wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                     They believe that the success of Poge Panda is dependent on the trust and loyalty of its supporters.
                 </p>
             </div>
@@ -151,13 +155,13 @@
     </section>
 
     <!--======== about ========-->
-    <section class="about__section text-white pt-12 pb-4 lg:pt-16 lg:pb-8 text-upper">
+    <section class="about__section text-white pt-12 pb-4 lg:py-20 text-upper" id="about">
         <div class="xl:container grid lg:grid-cols-2 lg:items-center mx-4 xl:mx-auto gap-6">
             <!--=== about data ===-->
             <div class="about__data">
-                <h2 class="text-4xl mb-4">About $Pogepanda</h2>
+                <h2 class="text-4xl mb-4 wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s">About $Pogepanda</h2>
 
-                <p class="text-sm md:text-base">
+                <p class="text-sm md:text-base wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                     Poge Panda is not just about the coin; it's about spreading joy and laughter. Our team is committed to creating a positive and entertaining experience for investors. Through engaging content, events, and collaborations, they strive to bring a smile to the faces of everyone involved. 🐼
                 </p>
             </div>
@@ -171,7 +175,7 @@
 
                 <div class="grid gap-4">
                     <!--== about widget ==-->
-                    <div class="about__widget button text-center p-4 rounded-2xl">
+                    <div class="about__widget button text-center p-4 rounded-2xl wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s">
                         <div class="about__widgets__content w-14 mx-auto mb-4">
                             <img src="images/3.png" alt="" class="w-full">
                         </div>
@@ -182,7 +186,7 @@
                     </div>
 
                     <!--== about widget ==-->
-                    <div class="about__widget button text-center p-4 rounded-2xl">
+                    <div class="about__widget button text-center p-4 rounded-2xl wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s">
                         <div class="about__widgets__content w-14 mx-auto mb-4">
                             <img src="images/1.png" alt="" class="w-full">
                         </div>
@@ -197,13 +201,13 @@
     </section>
 
     <!--======== join community ========-->
-    <section class="community__section text-white pt-12 lg:pt-16 text-upper">
+    <section class="community__section text-white pt-12 lg:pt-16 text-upper" id="community">
         <div class="community__container xl:container grid md:grid-cols-3 mx-4 xl:mx-auto gap-6 pb-4 lg:pb-8">
             <!--=== join community data ===-->
             <div class="community__data">
-                <h5 class="text-xl mb-5">Join our community</h5>
+                <h5 class="text-xl mb-5 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">Join our community</h5>
 
-                <p class="text-sm lg: lg:text-base mb-6">
+                <p class="text-sm lg: lg:text-base mb-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                     Are you ready to be a part of something extraordinary? Join us and unleash the power of Panda as we embark on an exciting adventure in the world of cryptocurrency. Together, we can achieve greatness and unlock the boundless potential that lies within us.
                 </p>
 
@@ -223,18 +227,18 @@
                 <h5 class="text-xl mb-5">Links</h5>
                 
                 <ul class="flex flex-col items-start md:items-center gap-4 text-sm lg: lg:text-base">
-                    <a href="" class="text-white">Home</a>
-                    <a href="" class="text-white">Features</a>
-                    <a href="" class="text-white">About</a>
-                    <a href="" class="text-white">Community</a>
+                    <a href="#home" class="text-white">Home</a>
+                    <a href="#feature" class="text-white">Features</a>
+                    <a href="#about" class="text-white">About</a>
+                    <a href="#community" class="text-white">Community</a>
                 </ul>
             </div>
 
             <!--=== send mail ===-->
             <div class="send__mail">
-                <h5 class="text-xl mb-5">Send an email</h5>
+                <h5 class="text-xl mb-5 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">Send an email</h5>
 
-                <p class="text-sm lg: lg:text-base mb-2">
+                <p class="text-sm lg: lg:text-base mb-2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                     Don't mess out on all the latest updates on ordinal protocol & developments.
                 </p>
 
@@ -256,6 +260,14 @@
     </div>
 </footer>
 
+<!--======== jquery lib ========-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!--======== dom script ========-->
+<script src="js/jquery-anchorScroll.js"></script>
+
+<!--======== dom script ========-->
+<script src="js/wow.min.js"></script>
 
 <!--======== dom script ========-->
 <script src="js/main.js"></script>

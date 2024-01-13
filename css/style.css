@@ -90,7 +90,7 @@ body {
 }
 
 .banner__anime__content img {
-    animation: upShaking 1.25s linear infinite;
+    animation: upShaking 2s linear infinite;
 }
 
 @keyframes upShaking {
@@ -106,4 +106,8 @@ body {
     100% {
         transform: translateY(0);
     }
+}
+
+.main__feature__data h5 span {
+    color: var(--secondary-color);
 }

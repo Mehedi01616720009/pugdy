@@ -40,6 +40,7 @@ body {
         top: 0;
         left: -280px;
         transition: .3s;
+        z-index: 1000;
     }
 
     .nav__manu.show-menu {
@@ -111,6 +112,29 @@ body {
 /* main feature */
 .main__feature__data h5 span {
     color: var(--secondary-color);
+}
+
+/* join us */
+.joinus__data h2 span {
+    color: var(--secondary-color);
+}
+
+.joinus__telegram {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    position: relative;
+}
+
+#copy-telegram-tooltip {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* community */

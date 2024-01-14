@@ -115,6 +115,7 @@ body {
 }
 
 /* join us */
+.about__data h2 span, 
 .joinus__data h2 span {
     color: var(--secondary-color);
 }

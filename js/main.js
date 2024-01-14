@@ -26,7 +26,7 @@ const copyBtn = document.getElementById('copy-telegram-btn'),
             // Hide tooltip after 3 seconds
             setTimeout(() => {
                 copyTooltip.style.display = 'none';
-            }, 3000);
+            }, 2000);
         } catch (err) {
             console.error('Unable to copy text to clipboard', err);
         }

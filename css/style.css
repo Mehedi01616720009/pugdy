@@ -1,9 +1,9 @@
 :root {
     /*=============== COLORS ==================*/
     /* HEX color mode */
-    --primary-color: #254A81;
-    --secondary-color: #4CFC5B;
-    --tartiary-color: #87CD6A;
+    --primary-color: #642682; /* #254A81 */
+    --secondary-color: #fc594a; /* #4CFC5B */
+    --tartiary-color: #d74242; /* #87CD6A */
 }
 
 @font-face {

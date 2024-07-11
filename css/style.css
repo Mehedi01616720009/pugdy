@@ -1,28 +1,34 @@
 :root {
     /*=============== COLORS ==================*/
     /* HEX color mode */
-    --primary-color: #254A81; /* #642682 */
-    --secondary-color: #4CFC5B; /* #fc594a */
-    --tartiary-color: #87CD6A; /* #d74242 */
+    --primary-color: #d0e6b5; /* #12ff00 */
+    --secondary-color: #4cfc5b; /* #fc594a */
+    --tartiary-color: #87cd6a; /* #d74242 */
 }
 
 @font-face {
-    font-family: 'FaithHopeBF6549e8edd6a09';
-    src: url('../fonts/FaithHopeBF6549e8edd6a09.eot');
-    src: url('../fonts/FaithHopeBF6549e8edd6a09.eot') format('embedded-opentype'),
-        url('../fonts/FaithHopeBF6549e8edd6a09.woff2') format('woff2'),
-        url('../fonts/FaithHopeBF6549e8edd6a09.woff') format('woff'),
-        url('../fonts/FaithHopeBF6549e8edd6a09.ttf') format('truetype'),
-        url('../fonts/FaithHopeBF6549e8edd6a09.svg#FaithHopeBF6549e8edd6a09') format('svg');
+    font-family: "FaithHopeBF6549e8edd6a09";
+    src: url("../fonts/FaithHopeBF6549e8edd6a09.eot");
+    src: url("../fonts/FaithHopeBF6549e8edd6a09.eot")
+            format("embedded-opentype"),
+        url("../fonts/FaithHopeBF6549e8edd6a09.woff2") format("woff2"),
+        url("../fonts/FaithHopeBF6549e8edd6a09.woff") format("woff"),
+        url("../fonts/FaithHopeBF6549e8edd6a09.ttf") format("truetype"),
+        url("../fonts/FaithHopeBF6549e8edd6a09.svg#FaithHopeBF6549e8edd6a09")
+            format("svg");
 }
 
 body {
-    font-family: 'FaithHopeBF6549e8edd6a09';
+    font-family: "FaithHopeBF6549e8edd6a09";
     background: var(--primary-color);
 }
 
 .button {
-    background: linear-gradient(110deg, var(--secondary-color) 0%, var(--tartiary-color) 100%) !important;
+    background: linear-gradient(
+        110deg,
+        var(--secondary-color) 0%,
+        var(--tartiary-color) 100%
+    ) !important;
 }
 
 /* header */
@@ -35,11 +41,11 @@ body {
         width: 240px;
         height: 100%;
         background: var(--tartiary-color);
-        padding: 2.5rem;
+        padding: 4.25rem 2.5rem;
         position: absolute;
         top: 0;
         left: -280px;
-        transition: .3s;
+        transition: 0.3s;
         z-index: 1000;
     }
 
@@ -49,10 +55,9 @@ body {
 
     .nav__close {
         position: absolute;
-        top: .75rem;
-        right: .75rem;
+        top: 0.75rem;
+        right: 0.75rem;
         font-size: 1.6rem;
-        color: var(--primary-color);
     }
 
     .nav__button {
@@ -60,7 +65,7 @@ body {
     }
 
     .nav__toggle {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -80,7 +85,7 @@ body {
         width: 340px !important;
     }
 
-    .banner__data, 
+    .banner__data,
     .banner__buttons {
         padding: 0 4rem;
     }
@@ -109,13 +114,13 @@ body {
     }
 }
 
-/* main feature */
-.main__feature__data h5 span {
-    color: var(--secondary-color);
+/* about us */
+.about__data p {
+    line-height: 2.5rem;
 }
 
 /* join us */
-.about__data h2 span, 
+.about__data h2 span,
 .joinus__data h2 span {
     color: var(--secondary-color);
 }
@@ -140,7 +145,7 @@ body {
 
 /* community */
 .community__container {
-    border-bottom: 1px solid #FFFFFF;
+    border-bottom: 1px solid #ffffff;
 }
 
 .community__links a:hover {

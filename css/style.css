@@ -40,8 +40,8 @@ body {
 @media screen and (max-width: 968px) {
     .nav__manu {
         width: 240px;
-        height: 100%;
-        background: var(--tartiary-color);
+        height: max-content;
+        background: #31a4d5;
         padding: 4.25rem 2.5rem;
         position: absolute;
         top: 0;

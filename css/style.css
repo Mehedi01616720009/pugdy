@@ -114,6 +114,19 @@ body {
     }
 }
 
+.img__slide {
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(calc(100vw + 100%));
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 /* about us */
 .about__data p {
     line-height: 2.5rem;

@@ -30,8 +30,16 @@
                 class="xl:container flex justify-between items-center px-5 xl:mx-auto py-2 lg:py-3"
             >
                 <!--=== logo ===-->
-                <a href="" class="nav__logo w-16">
-                    <img src="images/logo.png" alt="" class="w-full" />
+                <a href="" class="nav__logo flex items-center gap-2 grow">
+                    <img src="images/logo.png" alt="" class="w-14" />
+                    <div>
+                        <h4 class="text-xl font-bold text-[#79429b]">
+                            PUDGY <br />
+                            <span class="text-transparent text-stroke"
+                                >ON TON</span
+                            >
+                        </h4>
+                    </div>
                 </a>
 
                 <!--=== menu ===-->
@@ -59,8 +67,20 @@
                     <a
                         href="https://x.com/pudgyonton"
                         class="nav__item text-[#79429b]"
-                        ><i class="bi bi-twitter-x" class="size-8"></i
+                        ><i class="bi bi-twitter-x text-lg"></i
                     ></a>
+                </div>
+
+                <!--=== social ===-->
+                <div
+                    class="nav__socials flex items-center gap-1 text-white lg:hidden"
+                >
+                    <div
+                        class="nav__toggle px-2 py-1 rounded block lg:hidden"
+                        id="nav-toggle"
+                    >
+                        <i class="bi bi-list"></i>
+                    </div>
                 </div>
             </div>
         </header>
@@ -73,7 +93,7 @@
                 id="home"
             >
                 <div
-                    class="xl:container flex flex-col justify-center items-center xl:grid xl:grid-cols-2 px-5 lg:px-24 xl:mx-auto"
+                    class="xl:container flex flex-col justify-center items-center xl:grid xl:grid-cols-2 gap-6 px-5 lg:px-24 xl:mx-auto"
                 >
                     <div>
                         <div
@@ -91,58 +111,53 @@
                             </h2>
                         </div>
 
-                        <div class="flex items-center gap-3">
+                        <div
+                            class="grid max-w-[350px] w-full tracking-wider font-bold"
+                        >
                             <a
                                 href="https://t.me/pudgyportalton"
-                                class="size-12 flex justify-center items-center bg-[#fcb13e] rounded-xl"
+                                class="block text-center border border-2 border-[#fcb13e] text-[#fcb13e] rounded px-4 py-2"
                             >
-                                <i class="bi bi-bag-plus text-lg"></i>
+                                BUY
                             </a>
 
                             <a
                                 href="https://t.me/pudgyportalton"
-                                class="size-12 flex justify-center items-center bg-[#fcb13e] rounded-xl"
+                                class="block text-center border border-2 border-[#fcb13e] text-[#fcb13e] rounded px-4 py-2"
                             >
-                                <i class="bi bi-telegram text-lg"></i>
+                                Telegram
                             </a>
 
                             <a
                                 href=""
-                                class="size-12 flex justify-center items-center bg-[#fcb13e] rounded-xl"
+                                class="block text-center border border-2 border-[#fcb13e] text-[#fcb13e] rounded px-4 py-2"
                             >
-                                <img
-                                    src="images/dex.svg"
-                                    alt=""
-                                    class="size-8"
-                                />
+                                Chart
                             </a>
                         </div>
                     </div>
 
                     <div
                         class="banner__img w-full mb-2 wow fadeInUp xl:flex xl:justify-center mx-auto"
-                        data-wow-duration="2s"
-                        data-wow-delay="1s"
                     >
                         <div class="rounded-3xl overflow-hidden">
-                            <video
-                                src="images/banner.mp4"
+                            <img
+                                src="images/howtobuy.jpg"
+                                alt=""
                                 class="w-full"
-                                autoplay="true"
-                                loop
-                            ></video>
+                            />
                         </div>
                     </div>
                 </div>
             </section>
 
-            <div class="relative h-[100px] overflow-hidden">
+            <!-- <div class="relative h-[100px] overflow-hidden">
                 <img
                     src="images/slide.png"
                     alt=""
                     class="w-[200px] absolute img__slide"
                 />
-            </div>
+            </div> -->
 
             <!--======== about ========-->
             <section
@@ -223,18 +238,16 @@
                             Roadmap
                         </h2>
 
-                        <p
-                            class="text-lg lg:text-xl text- text-[#79429b] tracking-widest leading-10 wow fadeInUp"
-                            data-wow-duration="2s"
-                            data-wow-delay="1s"
+                        <div
+                            class="text-2xl font-semibold border border-4 border-black p-5 text-[#fcb13e] rounded-tr-3xl rounded-bl-3xl"
                         >
-                            Baby Frog Coin around a cute, playful frog
-                            character, tapping into the popularity of meme
-                            culture. Purpose: Primarily for fun, community
-                            engagement, and potentially as a collector's item.
-                            Could include gamification aspects or integration
-                            with social media challenges.
-                        </p>
+                            <ul class="grid gap-3">
+                                <li>. GAS PUMP</li>
+                                <li>. DE DUST</li>
+                                <li>. TRENDING/DEX UPDATE</li>
+                                <li>. VIBE & HODL</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <!--=== roadmap content ===-->
@@ -268,21 +281,53 @@
                             data-wow-duration="2s"
                             data-wow-delay="1s"
                         >
-                            How To Buy
+                            How To
+                            <span class="text-transparent text-stroke"
+                                >Buy</span
+                            >
                         </h2>
 
-                        <p
-                            class="text-lg lg:text-xl text- text-[#79429b] tracking-widest leading-10 wow fadeInUp"
-                            data-wow-duration="2s"
-                            data-wow-delay="1s"
+                        <div
+                            class="text-lg font-semibold border border-4 border-black p-5 text-[#fcb13e] rounded-tr-3xl rounded-bl-3xl tracking-wider mb-5"
                         >
-                            Baby Frog Coin around a cute, playful frog
-                            character, tapping into the popularity of meme
-                            culture. Purpose: Primarily for fun, community
-                            engagement, and potentially as a collector's item.
-                            Could include gamification aspects or integration
-                            with social media challenges.
-                        </p>
+                            <ul class="grid gap-1">
+                                <li>1. Create your MyTonKeeper wallet</li>
+                                <li>
+                                    2. Bridge by using ChangeNow or any other
+                                    bridge you know
+                                </li>
+                                <li>
+                                    3. Open the Gas Pump Bot if you can get in
+                                    before Dedus listing or buy directly on
+                                    Dedust after launch
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="grid max-w-[350px] w-full tracking-wider font-bold"
+                        >
+                            <a
+                                href="https://t.me/pudgyportalton"
+                                class="block text-center border border-2 border-[#fcb13e] text-[#fcb13e] rounded px-4 py-2"
+                            >
+                                BUY
+                            </a>
+
+                            <a
+                                href="https://t.me/pudgyportalton"
+                                class="block text-center border border-2 border-[#fcb13e] text-[#fcb13e] rounded px-4 py-2"
+                            >
+                                Dedust
+                            </a>
+
+                            <a
+                                href=""
+                                class="block text-center border border-2 border-[#fcb13e] text-[#fcb13e] rounded px-4 py-2"
+                            >
+                                Chart
+                            </a>
+                        </div>
                     </div>
 
                     <!--=== how to buy content ===-->
@@ -291,7 +336,15 @@
                         <div
                             class="howtobuy__content__img w-1/2 rounded-3xl overflow-hidden"
                         >
-                            <img src="images/about.jpg" alt="" class="w-full" />
+                            <div class="rounded-3xl overflow-hidden">
+                                <video
+                                    src="images/banner.mp4"
+                                    class="w-full"
+                                    autoplay
+                                    loop
+                                    muted
+                                ></video>
+                            </div>
                         </div>
                     </div>
                 </div>

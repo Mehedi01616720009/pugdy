@@ -21,7 +21,7 @@
 
         <!--======== custom css ========-->
         <link rel="stylesheet" href="css/style.css" />
-        <title>Baby Frogonton</title>
+        <title>PUDGY ON TON</title>
     </head>
     <body>
         <!--======== header ========-->
@@ -29,43 +29,38 @@
             <div
                 class="xl:container flex justify-between items-center px-5 xl:mx-auto py-2 lg:py-3"
             >
-                <div class="flex items-center gap-4">
-                    <!--=== logo ===-->
-                    <a href="" class="nav__logo w-16">
-                        <img src="images/logo.png" alt="" class="w-full" />
-                    </a>
+                <!--=== logo ===-->
+                <a href="" class="nav__logo w-16">
+                    <img src="images/logo.png" alt="" class="w-full" />
+                </a>
 
-                    <!--=== menu ===-->
-                    <div
-                        class="nav__manu flex flex-col lg:flex-row justify-start items-start lg:justify-between lg:items-center gap-6 lg:gap-8 text-upper text-lg"
-                        id="nav-menu"
+                <!--=== menu ===-->
+                <div
+                    class="nav__manu flex flex-col lg:flex-row justify-start items-start lg:justify-between lg:items-center gap-6 lg:gap-8 text-upper text-lg"
+                    id="nav-menu"
+                >
+                    <i
+                        class="bi bi-x-circle-fill nav__close text-white lg:hidden"
+                        id="nav-close"
+                    ></i>
+
+                    <a href="#about" class="nav__item text-[#79429b]">About</a>
+                    <a href="#roadmap" class="nav__item text-[#79429b]"
+                        >Roadmap</a
                     >
-                        <i
-                            class="bi bi-x-circle-fill nav__close text-white lg:hidden"
-                            id="nav-close"
-                        ></i>
-
-                        <a href="#home" class="nav__item text-white">Home</a>
-                        <a href="#about" class="nav__item text-white"
-                            >About us</a
-                        >
-                        <a href="#how-to-buy" class="nav__item text-white"
-                            >How to buy</a
-                        >
-                        <a href="#tokenomics" class="nav__item text-white"
-                            >Tokenomics</a
-                        >
-                    </div>
-                </div>
-
-                <!--=== social ===-->
-                <div class="nav__socials flex items-center gap-1 text-white">
-                    <div
-                        class="nav__toggle px-2 py-1 rounded block lg:hidden"
-                        id="nav-toggle"
+                    <a href="#how-to-buy" class="nav__item text-[#79429b]"
+                        >How to buy</a
                     >
-                        <i class="bi bi-list"></i>
-                    </div>
+                    <a
+                        href="https://t.me/pudgyportalton"
+                        class="nav__item text-[#79429b]"
+                        >Telegram</a
+                    >
+                    <a
+                        href="https://x.com/pudgyonton"
+                        class="nav__item text-[#79429b]"
+                        ><i class="bi bi-twitter-x" class="size-8"></i
+                    ></a>
                 </div>
             </div>
         </header>
@@ -74,11 +69,11 @@
         <main>
             <!--======== banner ========-->
             <section
-                class="banner__section text-white pt-6 pb-4 lg:pt-5 lg:pb-8"
+                class="banner__section text-white pt-6 pb-4 lg:pt-10 lg:pb-8"
                 id="home"
             >
                 <div
-                    class="xl:container flex flex-col justify-center items-center xl:grid xl:grid-cols-2 px-5 xl:mx-auto"
+                    class="xl:container flex flex-col justify-center items-center xl:grid xl:grid-cols-2 px-5 lg:px-24 xl:mx-auto"
                 >
                     <div>
                         <div
@@ -86,41 +81,34 @@
                             data-wow-duration="2s"
                             data-wow-delay="1s"
                         >
-                            <p class="text-center text-4xl lg:text-7xl md:px-8">
-                                Baby Frog <br />On Ton.
-                            </p>
-                        </div>
-
-                        <div
-                            class="banner__img w-full mb-2 wow fadeInUp xl:flex xl:justify-center mx-auto"
-                            data-wow-duration="2s"
-                            data-wow-delay="1s"
-                        >
-                            <img
-                                src="images/banner-1.png"
-                                alt=""
-                                class="w-full"
-                            />
-                        </div>
-
-                        <div class="flex justify-center items-center gap-3">
-                            <a
-                                href="https://x.com/bfrogonton"
-                                class="size-12 flex justify-center items-center bg-[#4c9239] rounded-xl"
+                            <h2
+                                class="text-5xl lg:text-7xl font-bold text-[#79429b]"
                             >
-                                <i class="bi bi-twitter-x" class="size-8"></i>
+                                PUDGY <br />ON
+                                <span class="text-transparent text-stroke"
+                                    >TON</span
+                                >
+                            </h2>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <a
+                                href="https://t.me/pudgyportalton"
+                                class="size-12 flex justify-center items-center bg-[#fcb13e] rounded-xl"
+                            >
+                                <i class="bi bi-bag-plus text-lg"></i>
                             </a>
 
                             <a
-                                href="https://t.me/babyfrogonton"
-                                class="size-12 flex justify-center items-center bg-[#4c9239] rounded-xl"
+                                href="https://t.me/pudgyportalton"
+                                class="size-12 flex justify-center items-center bg-[#fcb13e] rounded-xl"
                             >
-                                <i class="bi bi-telegram" class="size-8"></i>
+                                <i class="bi bi-telegram text-lg"></i>
                             </a>
 
                             <a
                                 href=""
-                                class="size-12 flex justify-center items-center bg-[#4c9239] rounded-xl"
+                                class="size-12 flex justify-center items-center bg-[#fcb13e] rounded-xl"
                             >
                                 <img
                                     src="images/dex.svg"
@@ -132,39 +120,93 @@
                     </div>
 
                     <div
-                        class="banner__anime__content hidden xl:block wow fadeInUp"
+                        class="banner__img w-full mb-2 wow fadeInUp xl:flex xl:justify-center mx-auto"
                         data-wow-duration="2s"
                         data-wow-delay="1s"
                     >
-                        <img
-                            src="images/baneer-2.png"
-                            alt=""
-                            class="w-3/4 mx-auto"
-                        />
+                        <img src="images/banner.png" alt="" class="w-full" />
                     </div>
                 </div>
             </section>
 
             <!--======== about ========-->
             <section
-                class="about__section text-white pt-12 pb-4 lg:py-20 text-upper"
+                class="about__section pt-12 pb-4 lg:py-20 text-upper"
                 id="about"
             >
                 <div
-                    class="xl:container grid lg:grid-cols-2 lg:items-center px-5 xl:mx-auto gap-6"
+                    class="xl:container grid lg:grid-cols-2 lg:items-center px-5 lg:px-24 xl:mx-auto gap-6"
                 >
+                    <!--=== about content ===-->
+                    <div class="about__content flex justify-center">
+                        <!--== about img ==-->
+                        <div
+                            class="about__content__img w-1/2 rounded-3xl overflow-hidden"
+                        >
+                            <img src="images/about.jpg" alt="" class="w-full" />
+                        </div>
+                    </div>
+
                     <!--=== about data ===-->
                     <div class="about__data">
                         <h2
-                            class="text-4xl lg:text-5xl mb-4 wow fadeInRight"
+                            class="text-5xl lg:text-7xl text-[#79429b] mb-4 wow fadeInRight"
                             data-wow-duration="2s"
                             data-wow-delay="1s"
                         >
-                            BABYFROG ON TON
+                            About
                         </h2>
 
                         <p
-                            class="text-lg lg:text-xl tracking-widest leading-10 wow fadeInUp"
+                            class="text-lg lg:text-xl text- text-[#79429b] tracking-widest leading-10 wow fadeInUp"
+                            data-wow-duration="2s"
+                            data-wow-delay="1s"
+                        >
+                            Baby Frog Coin around a cute, playful frog
+                            character, tapping into the popularity of meme
+                            culture. Purpose: Primarily for fun, community
+                            engagement, and potentially as a collector's item.
+                            Could include gamification aspects or integration
+                            with social media challenges.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--======== roadmap ========-->
+            <section
+                class="roadmap__section text pt-12 pb-4 lg:py-20 text-upper"
+                id="roadmap"
+            >
+                <div
+                    class="xl:container grid lg:grid-cols-3 lg:items-center px-5 lg:px-24 xl:mx-auto gap-6"
+                >
+                    <!--=== roadmap content ===-->
+                    <div class="roadmap__content flex justify-center">
+                        <!--== about img ==-->
+                        <div
+                            class="roadmap__content__img w-1/2 rounded-3xl overflow-hidden"
+                        >
+                            <img
+                                src="images/roadmap-1.png"
+                                alt=""
+                                class="w-full"
+                            />
+                        </div>
+                    </div>
+
+                    <!--=== roadmap data ===-->
+                    <div class="roadmap__data">
+                        <h2
+                            class="text-5xl lg:text-7xl text-[#79429b] mb-4 wow fadeInRight"
+                            data-wow-duration="2s"
+                            data-wow-delay="1s"
+                        >
+                            Roadmap
+                        </h2>
+
+                        <p
+                            class="text-lg lg:text-xl text- text-[#79429b] tracking-widest leading-10 wow fadeInUp"
                             data-wow-duration="2s"
                             data-wow-delay="1s"
                         >
@@ -177,24 +219,14 @@
                         </p>
                     </div>
 
-                    <!--=== about content ===-->
-                    <div class="about__content flex relative">
+                    <!--=== roadmap content ===-->
+                    <div class="roadmap__content flex justify-center">
                         <!--== about img ==-->
                         <div
-                            class="about__content__img w-1/2 rounded-3xl overflow-hidden"
+                            class="roadmap__content__img w-1/2 rounded-3xl overflow-hidden"
                         >
                             <img
-                                src="images/about-1.jpg"
-                                alt=""
-                                class="w-full"
-                            />
-                        </div>
-
-                        <div
-                            class="about__content__img w-1/2 rounded-3xl overflow-hidden absolute top-32 left-32"
-                        >
-                            <img
-                                src="images/about-2.jpg"
+                                src="images/roadmap-2.png"
                                 alt=""
                                 class="w-full"
                             />
@@ -208,204 +240,40 @@
                 class="howtobuy__section text-white pt-36 pb-4 lg:py-20 text-upper"
                 id="how-to-buy"
             >
-                <div class="xl:container px-5 xl:mx-auto">
+                <div
+                    class="xl:container grid lg:grid-cols-2 lg:items-center px-5 lg:px-24 xl:mx-auto gap-6"
+                >
                     <!--=== how to buy data ===-->
-                    <div class="joinus__data">
+                    <div class="howtobuy__data">
                         <h2
-                            class="text-4xl lg:text-6xl text-center mb-8 wow fadeInLeft"
+                            class="text-5xl lg:text-7xl text-[#79429b] mb-4 wow fadeInRight"
                             data-wow-duration="2s"
                             data-wow-delay="1s"
                         >
                             How To Buy
                         </h2>
 
-                        <div
-                            class="grid md:grid-cols-2 lg:grid-cols-12 gap-4 lg:gap-6 mb-10"
+                        <p
+                            class="text-lg lg:text-xl text- text-[#79429b] tracking-widest leading-10 wow fadeInUp"
+                            data-wow-duration="2s"
+                            data-wow-delay="1s"
                         >
-                            <div class="hidden lg:block lg:col-span-2"></div>
-
-                            <!-- stage card -->
-                            <div class="lg:col-span-4 bg-white rounded-xl p-5">
-                                <h3
-                                    class="text-lg lg:text-xl text-[#12ff00] underline mb-2"
-                                >
-                                    Stage 01
-                                </h3>
-                                <p
-                                    class="text-base lg:text-lg text-black mb-0.5"
-                                >
-                                    GAS PUMP LAUNCH $BFROG - BABYFROG ON GAS
-                                    PUMP
-                                </p>
-                                <ul>
-                                    <li class="text-black">
-                                        -> CREATE TELEGRAM STICKERS
-                                    </li>
-                                    <li class="text-black">
-                                        -> PAY DEX UPDATE ONCE WE REACH
-                                        DeDust.io
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- stage card -->
-                            <div class="lg:col-span-4 bg-white rounded-xl p-5">
-                                <h3
-                                    class="text-lg lg:text-xl text-[#12ff00] underline mb-2"
-                                >
-                                    Stage 02
-                                </h3>
-                                <p
-                                    class="text-base lg:text-lg text-black mb-0.5"
-                                >
-                                    DEDUST.IO BUY TELEGRAM GROUP ADS AND START
-                                    RAIDING ON TWITTER
-                                </p>
-                                <ul>
-                                    <li class="text-black">
-                                        -> BUY ADS ON DEXSCREENER
-                                    </li>
-                                    <li class="text-black">
-                                        -> MOON AND BEYOND MORE AND MORE TWITTER
-                                        RAIDS
-                                    </li>
-                                    <li class="text-black">
-                                        -> GIVEAWAYS OF $BFROG TOKENS AND TON
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div
-                            class="grid md:grid-cols-2 lg:grid-cols-12 gap-4 lg:gap-6 mb-10"
-                        >
-                            <div class="hidden lg:block lg:col-span-2"></div>
-
-                            <!-- stage card -->
-                            <div class="lg:col-span-4 bg-white rounded-xl p-5">
-                                <h3
-                                    class="text-xl lg:text-3xl text-[#12ff00] underline mb-2"
-                                >
-                                    Marketing and Community Branding:
-                                </h3>
-                                <p class="text-lg lg:text-xl text-black mb-0.5">
-                                    Develop a strong, recognizable brand with a
-                                    catchy logo, engaging website, and
-                                    consistent social media presence. Community
-                                    Building: Engage on platforms like Twitter,
-                                    Reddit, Telegram, and Discord. Create memes,
-                                    videos, and interactive content to attract
-                                    and entertain followers. Influencers:
-                                    Partner with crypto influencers and meme
-                                    creators to spread the word.
-                                </p>
-                            </div>
-
-                            <!-- stage card -->
-                            <div class="lg:col-span-4 bg-white rounded-xl p-5">
-                                <h3
-                                    class="text-xl lg:text-3xl text-[#12ff00] underline mb-2"
-                                >
-                                    Community Engagement Transparency:
-                                </h3>
-                                <p class="text-lg lg:text-xl text-black mb-0.5">
-                                    Regularly update the community on progress,
-                                    challenges, and future plans. Feedback
-                                    Mechanism: Create channels for community
-                                    feedback and actively involve them in
-                                    decision-making processes. By focusing on
-                                    these aspects and leveraging the power of
-                                    meme culture, you can create a vibrant,
-                                    engaged community around Baby Frog Coin.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--======== tokenomics ========-->
-            <section
-                class="tokenomics__section text-white pt-12 lg:pt-16 text-upper"
-                id="tokenomics"
-            >
-                <div
-                    class="tokenomics__container xl:container grid md:grid-cols-2 px-5 xl:mx-auto gap-6 pb-4 lg:pb-8 items-center"
-                >
-                    <!--=== tokenomic data ===-->
-                    <div class="community__links text-center">
-                        <h2 class="text-4xl lg:text-7xl mb-8">Tokenomics</h2>
-
-                        <h4 class="text-3xl lg:text-5xl mb-5">total supply</h4>
-                        <h4 class="text-3xl lg:text-5xl mb-5">
-                            420,000,000,000
-                        </h4>
-                        <h4 class="text-3xl lg:text-5xl mb-5">no taxes</h4>
-                        <h4 class="text-3xl lg:text-5xl mb-5">
-                            ownership revoked
-                        </h4>
+                            Baby Frog Coin around a cute, playful frog
+                            character, tapping into the popularity of meme
+                            culture. Purpose: Primarily for fun, community
+                            engagement, and potentially as a collector's item.
+                            Could include gamification aspects or integration
+                            with social media challenges.
+                        </p>
                     </div>
 
-                    <!--=== tokenomic content ===-->
-                    <div class="grid grid-cols-3 gap-4">
-                        <div class="community__content col-span-2">
-                            <!--== tokenomic img ==-->
-                            <div
-                                class="community__content__img h-max rounded-3xl overflow-hidden"
-                            >
-                                <img
-                                    src="images/token-1.jpg"
-                                    alt=""
-                                    class="w-full"
-                                />
-                            </div>
-                        </div>
-
-                        <!--=== tokenomic content ===-->
-                        <div class="community__content grid gap-3">
-                            <!--== tokenomic img ==-->
-                            <div
-                                class="community__content__img h-max rounded-xl overflow-hidden"
-                            >
-                                <img
-                                    src="images/token-2.jpg"
-                                    alt=""
-                                    class="w-full"
-                                />
-                            </div>
-
-                            <!--== tokenomic img ==-->
-                            <div
-                                class="community__content__img h-max rounded-xl overflow-hidden"
-                            >
-                                <img
-                                    src="images/token-3.jpg"
-                                    alt=""
-                                    class="w-full"
-                                />
-                            </div>
-
-                            <!--== tokenomic img ==-->
-                            <div
-                                class="community__content__img h-max rounded-xl overflow-hidden"
-                            >
-                                <img
-                                    src="images/community-4.jpg"
-                                    alt=""
-                                    class="w-full"
-                                />
-                            </div>
-
-                            <!--== tokenomic img ==-->
-                            <div
-                                class="community__content__img h-max rounded-xl overflow-hidden"
-                            >
-                                <img
-                                    src="images/community-5.jpg"
-                                    alt=""
-                                    class="w-full"
-                                />
-                            </div>
+                    <!--=== how to buy content ===-->
+                    <div class="howtobuy__content flex justify-center">
+                        <!--== how to buy img ==-->
+                        <div
+                            class="howtobuy__content__img w-1/2 rounded-3xl overflow-hidden"
+                        >
+                            <img src="images/about.jpg" alt="" class="w-full" />
                         </div>
                     </div>
                 </div>
@@ -414,10 +282,10 @@
 
         <footer>
             <div
-                class="xl:container mx-4 xl:mx-auto pt-8 pb-5 text-left md:text-center text-sm md:text-base text-upper text-white"
+                class="xl:container mx-4 xl:mx-auto pt-8 pb-5 text-left md:text-center text-sm md:text-base text-upper text-[#79429b]"
             >
-                dev@babyfrogonton <br />&copy; 2024 $babyfrogonton project all
-                right reserved
+                dev@PUDGYONTON <br />&copy; 2024 $PUDGYONTON project all right
+                reserved
             </div>
         </footer>
 

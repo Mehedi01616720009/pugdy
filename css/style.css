@@ -1,9 +1,10 @@
 :root {
     /*=============== COLORS ==================*/
     /* HEX color mode */
-    --primary-color: #d0e6b5; /* #12ff00 */
+    --primary-color: #f4e6d9; /* #12ff00 */
     --secondary-color: #4cfc5b; /* #fc594a */
     --tartiary-color: #87cd6a; /* #d74242 */
+    --text-color: #79429b;
 }
 
 @font-face {
@@ -80,14 +81,13 @@ body {
 }
 
 /* banner */
+.text-stroke {
+    -webkit-text-stroke: 2px var(--text-color);
+}
+
 @media screen and (min-width: 768px) {
     .banner__img {
         width: 340px !important;
-    }
-
-    .banner__data,
-    .banner__buttons {
-        padding: 0 4rem;
     }
 
     .banner__button {
